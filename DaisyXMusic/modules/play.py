@@ -501,7 +501,7 @@ async def play(_, message: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
+                        f"<b>❗️ Flood Wait Error ⏳ \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
                         "\n\nOr manually add assistant to your Group and try again</b>",
                     )
     try:
@@ -609,10 +609,6 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                     InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                 ],
-                [
-                    InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                    InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-                ],
                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
             ]
         )
@@ -702,10 +698,6 @@ async def play(_, message: Message):
                         InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                         InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                     ],
-                    [
-                        InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-                    ],
                     [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
                 ]
             )
@@ -745,7 +737,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ <b>Playing</b> here the song requested by {} via Youtube Music 😎".format(
+            caption="▶️ <b>Playing</b> here the song requested by {} via Youtube Music 📼".format(
                 message.from_user.mention()
             ),
         )
@@ -801,7 +793,7 @@ async def ytplay(_, message: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
+                        f"<b>❗️ Flood Wait Error ⏳ \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
                         "\n\nOr manually add assistant to your Group and try again</b>",
                     )
     try:
@@ -860,10 +852,6 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
             ],
-            [
-                InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-            ],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
     )
@@ -903,7 +891,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ <b>Playing</b> here the song requested by {} via Youtube Music 😎".format(
+            caption="▶️ <b>Playing</b> here the song requested by {} via Youtube Music 📼".format(
                 message.from_user.mention()
             ),
         )
@@ -957,7 +945,7 @@ async def deezer(client: Client, message_: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
+                        f"<b>❗️ Flood Wait Error ⏳ \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
                         "\n\nOr manually add assistant to your Group and try again</b>",
                     )
     try:
@@ -984,7 +972,7 @@ async def deezer(client: Client, message_: Message):
         url = songs.result[0].url
         artist = songs.result[0].artist
         duration = songs.result[0].duration
-        thumbnail = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        thumbnail = "https://telegra.ph/file/b77a05be93b7fd9360567.jpg"
 
     except:
         await res.edit("Found Literally Nothing, You Should Work On Your English!")
@@ -1096,7 +1084,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        "\n\nOr manually add @RosoAssistant to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -1248,10 +1236,6 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
             ],
-            [
-                InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-            ],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
     )
@@ -1294,7 +1278,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"▶️ <b>Playing</b> here the song requested by {r_by.mention} via Youtube Music 😎",
+            caption=f"▶️ <b>Playing</b> here the song requested by {r_by.mention} via Youtube Music 📼",
         )
         
         os.remove("final.png")
