@@ -21,7 +21,7 @@ from DaisyXMusic.config import PROJECT_NAME
 from DaisyXMusic.config import SUPPORT_GROUP
 from DaisyXMusic.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda. Silahkan tekan /help untuk melihat apa saja yang dapat saya lakukan.\n\n`-note: Tekan update dibawah ini untuk melihat informasi seputar bot`."
+      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda. Silahkan lihat Help untuk melihat apa saja yang dapat saya lakukan.\n\n`-note: Tekan update dibawah ini untuk melihat informasi seputar bot`."
       HELP_MSG = [
         ".",
 f"""
@@ -29,7 +29,7 @@ f"""
 
 🍺Roso-Music dapat memutar musik di obrolan suara grup Anda serta obrolan suara Channel
 
-🤖Nama asisten ⊵ @RosoAssistant**\n\n`klik tombol dibawah untuk melihat instruksi selanjutnya`
+🤖Nama asisten ⊵ @AssistantRoso **\n\n`klik tombol dibawah untuk melihat instruksi selanjutnya`
 """,
 
 f"""
@@ -91,7 +91,7 @@ f"""
 1) Dapatkan ID Chanel Anda.
 2) Buat grup dengan judul: Channel Music:(id_chanel_anda)
 3) Tambahkan bot sebagai admin Chanel dengan izin penuh
-4) Tambahkan @RosoAssistant ke chanel sebagai admin.
+4) Tambahkan @AssistantRoso ke chanel sebagai admin.
 5) Cukup kirim perintah di grup Anda.
 """,
 
@@ -99,7 +99,7 @@ f"""
 **⊵  Pengaturan tambahan📍**
 
 - /admincache: Memperbarui info admin grup Anda. Coba jika bot tidak mengenali admin
-- /userbotjoin: Undang @RosoAssistant Userbot ke dalam obrolan Anda
+- /userbotjoin: Undang @AssistantRoso Userbot ke dalam obrolan Anda
 
 """
       ]
