@@ -41,9 +41,12 @@ def _start(client, message):
                         "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "🔊 Support", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "👤 Contact", url=f"https://t.me/RosoOwner_bot")
+                ],[
+                    InlineKeyboardButton(
+                        "❔ Help & Commands ❔", callback_data = "_help")
                 ]
             ]
         ),
@@ -53,12 +56,12 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""**🔴 {PROJECT_NAME} is online**""",
+        f"""**🤖 {PROJECT_NAME} is online**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🔊 Support", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ]
             ]
@@ -118,7 +121,7 @@ async def ghelp(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "Help & Commands", url=f"https://t.me/{BOT_USERNAME}?start"
+                        "Help & Commands", callback_data = "help+2"
                     )
                 ]
             ]
