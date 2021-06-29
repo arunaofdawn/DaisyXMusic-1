@@ -44,9 +44,6 @@ def _start(client, message):
                         "🔊 Support", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
                         "👤 Contact", url=f"https://t.me/RosoOwner_bot")
-                ],[
-                    InlineKeyboardButton(
-                        "❔ Help & Commands ❔", callback_data = "_help")
                 ]
             ]
         ),
@@ -116,12 +113,12 @@ def map(pos):
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**️Halo! Saya dapat memutar musik di obrolan suara grup & channel telegram.**""",
+        f"""**️Hello i'm Roso! I can play music on group voice chat & telegram channel.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Help & Commands", callback_data = "help+2"
+                        "Help & Commands", url=f"https://t.me/{BOT_USERNAME}?start"
                     )
                 ]
             ]
