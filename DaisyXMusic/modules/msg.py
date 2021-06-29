@@ -21,7 +21,7 @@ from DaisyXMusic.config import PROJECT_NAME
 from DaisyXMusic.config import SUPPORT_GROUP
 from DaisyXMusic.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda. Silahkan lihat Help untuk melihat apa saja yang dapat saya lakukan.\n\n`-note: Tekan update dibawah ini untuk melihat informasi seputar bot`."
+      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda. Silahkan tekan /help untuk melihat apa saja yang dapat saya lakukan.\n\n`-note: Lihat support dibawah ini untuk melihat informasi seputar bot`."
       HELP_MSG = [
         ".",
 f"""
